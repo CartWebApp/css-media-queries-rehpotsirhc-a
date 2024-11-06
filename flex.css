@@ -64,12 +64,38 @@
 
 /* Tablet Styles*/
 
+@media screen and (min-width:520px) and (max-width:1024px){
+  .flex-container {
+    height: fit-content;
+  }
+  
+  .quarter{
+    width: 48%;
+  }
 
+  .third{
+    width: 48%;
+    order:2
+  }
 
+  .third:last-child{
+    width: 97%; 
+    /*flex-grow:1;*/
+    order:1;
+  }
+}
+
+@media screen and (min-width:520px) and (max-width: 1024px){
+  .half,
+    .third,
+      .quarter {
+        width:97%
+      }
+}
 
 /* Mobile Styles*/
 
-
+/*doesnt make sense, teach self later/*
 
 
 
